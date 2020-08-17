@@ -1,7 +1,3 @@
-# petty-reddit-downvoter
-
-For those of us who enjoy things like [/r/pettyrevenge](https://www.reddit.com/r/pettyrevenge/), this is a NodeJS CLI tool that uses [snoowrap](https://github.com/not-an-aardvark/snoowrap) to downvote people that annoy you... or whatever. 
-
 # Installing
 1. `git clone repo`
 2. `cd petty-reddit-downvoter`
@@ -37,7 +33,3 @@ The current setup of PRD should avoid calls to comments older than 30 days. If a
 Please note that `messages[index].fiveOhThreeErrors` only includes a count of downvotes that threw 503s and not entire targets. If the entire target request throws a 503 error, stdout will print a message that says `There was a 503 error (reddit is busy) when trying to downvote gallowboob. Try getting petty with it later and make sure to spam the shit out of reddit admins in a pettyway about how bad their servers are.This is what was done before the error [messages]`. This is somewhat ugly because if you catch several 503 errors it makes the console messy. 
 
 If you are expecting to downvote more than 600 posts in 10 minutes, add the key-value pair `requestDelay: 1000` to the `r.config({})` object to avoid API ratelimit errors. 
-
-# future updates
-1. Submission downvotes.
-	- The script will not downvote submissions, just comments.
