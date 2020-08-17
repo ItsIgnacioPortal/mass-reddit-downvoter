@@ -1,0 +1,30 @@
+{
+  "name": "mass-reddit-downvoter",
+  "version": "1.0.0",
+  "description": "A NodeJS CLI tool that massively downvotes comments with [snoowrap](https://github.com/not-an-aardvark/snoowrap) ",
+  "main": "downvoter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PinkDev1/mass-reddit-downvoter.git"
+  },
+  "keywords": [
+    "reddit",
+    "downvote",
+    "petty",
+    "revenge"
+  ],
+  "author": "PinkDev1",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PinkDev1/mass-reddit-downvoter/issues"
+  },
+  "homepage": "https://github.com/PinkDev1/mass-reddit-downvoter",
+  "dependencies": {
+    "moment": "^2.20.1",
+    "snoowrap": "^1.15.1",
+    "yargs": "^10.0.3"
+  }
+}
