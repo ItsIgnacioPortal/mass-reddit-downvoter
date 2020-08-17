@@ -1,3 +1,5 @@
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FPinkDev1%2Fmass-reddit-downvoter)
+
 # Installing
 1. `git clone repo`
 2. `cd petty-reddit-downvoter`
