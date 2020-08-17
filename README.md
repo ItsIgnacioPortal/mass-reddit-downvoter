@@ -2,9 +2,28 @@
 1. `git clone repo`
 2. `cd petty-reddit-downvoter`
 3. `yarn` or `npm install`
-4. Add credentials in `client_credentials.json`
-	- If you do not have reddit credentials you can get your oauth2 client id and client secret using [Reddit's Guide](https://github.com/reddit/reddit/wiki/OAuth2)
+4. Add credentials in `client_credentials.json`    
+	To get these credentials, you need to make a **script app** on reddit. For more info, check out [Reddit's Guide](https://github.com/reddit/reddit/wiki/OAuth2)
+	
+	First, go to https://www.reddit.com/prefs/apps and press the [Create an App] button. Fill in the text fields as follows:
+	- **Name**: `mass-downvoter`
+	- **redirect URI**: `https://github.com/PinkDev1/mass-reddit-downvoter#usage`
+	- **description (optional)**: `To give downvotes massively`
+	- **About URL (optional)**: `https://github.com/PinkDev1/mass-reddit-downvoter`
 
+	After you have created your app, it should look a bit like this:
+	![example-app-img](https://github.com/PinkDev1/mass-reddit-downvoter/blob/master/example-app.jpg?raw=true)
+
+	Once you've created your app, you have to **authorize** it to have access to your account. To do this, copy the URL below on a text editor and replace `myClientID` with your actual client ID (Marked with a **red arrow** on the example):     
+	`https://www.reddit.com/api/v1/authorize?client_id=EdP3W0LPsojJVQ&response_type=code&duration=permanent&scope=vote&state=banana&redirect_uri=https://github.com/PinkDev1/mass-reddit-downvoter#usage`
+	and slap that *authorize* button.
+	
+	Once that's done, you have all the credentials you need to start using the script!
+	- **client Id**: marked with a **red arrow** on the image
+	- **client secret**: marked with a **blue arrow** on the image
+	- **username**: marked with a **green arrow** on the image
+	- **password**: password of your reddit account. Only you know it *(hopefully)*
+	
 # Usage
 
 `node downvoter.js [--targets val1 val2] [-l 50]`
