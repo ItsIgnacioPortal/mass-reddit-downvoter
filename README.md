@@ -1,8 +1,8 @@
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FPinkDev1%2Fmass-reddit-downvoter)
 
-# Installing
+## Installing
 1. `git clone https://github.com/PinkDev1/mass-reddit-downvoter.git`
-2. `cd petty-reddit-downvoter`
+2. `cd mass-reddit-downvoter`
 3. `yarn` or `npm install`
 4. Add credentials in `client_credentials.json`    
 	To get these credentials, you need to make a **script app** on reddit. For more info, check out [Reddit's Guide](https://github.com/reddit/reddit/wiki/OAuth2)
@@ -26,7 +26,7 @@
 	- **username**: marked with a **green arrow** on the image
 	- **password**: password of your reddit account. Only you know it *(hopefully)*
 	
-# Usage
+## Usage
 
 `node downvoter.js [--targets val1 val2] [-l 50]`
 
@@ -41,7 +41,7 @@ DEFAULT: 50
 
 Example: `node index.js --targets F0REM4N spez gallowboob --limit 69`
 
-# Notes on functionality
+## Notes on functionality
 The current setup of PRD should avoid calls to comments older than 30 days. If all targets are downvoted successfully you'll get an stdout object letting you know the results of the PRD in an array called `messages` of objects structured as
 ```
 {
@@ -54,3 +54,14 @@ The current setup of PRD should avoid calls to comments older than 30 days. If a
 Please note that `messages[index].fiveOhThreeErrors` only includes a count of downvotes that threw 503s and not entire targets. If the entire target request throws a 503 error, stdout will print a message that says `There was a 503 error (reddit is busy) when trying to downvote gallowboob. Try getting petty with it later and make sure to spam the shit out of reddit admins in a pettyway about how bad their servers are.This is what was done before the error [messages]`. This is somewhat ugly because if you catch several 503 errors it makes the console messy. 
 
 If you are expecting to downvote more than 600 posts in 10 minutes, add the key-value pair `requestDelay: 1000` to the `r.config({})` object to avoid API ratelimit errors. 
+
+## Special thanks
+
+This project is heavily based off of [Mike Duran Mitchell's petty-reddit-downvoter](https://github.com/mike-duran-mitchell/petty-reddit-downvoter).
+However, multiple additions and fixes have been done to this new repository, such as:
+
+- Cleaner code (Removed unused variables; Fixed indentation)
+- Load targets from `targets.default`
+- A lot more documentation on usage
+- Bugfixes (bad JSON format)
+- etc
