@@ -19,7 +19,7 @@ This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It 
 	![example-app-img](https://github.com/PinkDev1/mass-reddit-downvoter/blob/master/example-app.jpg?raw=true)
 
 	Once you've created your app, you have to **authorize** it to have access to your account. To do this, copy the URL below on a text editor and replace `myClientID` with your actual client ID (Marked with a **red arrow** on the example):     
-	`https://www.reddit.com/api/v1/authorize?client_id=EdP3W0LPsojJVQ&response_type=code&duration=permanent&scope=vote&state=banana&redirect_uri=https://github.com/PinkDev1/mass-reddit-downvoter#usage`
+	`https://www.reddit.com/api/v1/authorize?client_id=myClientID&response_type=code&duration=permanent&scope=vote&state=banana&redirect_uri=https://github.com/PinkDev1/mass-reddit-downvoter#usage`
 	and slap that *authorize* button.
 	
 	Once that's done, you have all the credentials you need to start using the script!
