@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PinkDev1/mass-reddit-downvoter.git"
+    "url": "git+https://github.com/ItsIgnacioPortal/mass-reddit-downvoter.git"
   },
   "keywords": [
     "reddit",
@@ -19,9 +19,9 @@
   "author": "PinkDev1",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/PinkDev1/mass-reddit-downvoter/issues"
+    "url": "https://github.com/ItsIgnacioPortal/mass-reddit-downvoter/issues"
   },
-  "homepage": "https://github.com/PinkDev1/mass-reddit-downvoter",
+  "homepage": "https://github.com/ItsIgnacioPortal/mass-reddit-downvoter",
   "dependencies": {
     "moment": "^2.20.1",
     "snoowrap": "^1.15.1",
