@@ -3,7 +3,7 @@
 This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It can take mutiple targets at a time, and *may* downvote up to 250 comments in less than 3 seconds! 
 
 ## Installing
-1. `git clone https://github.com/PinkDev1/mass-reddit-downvoter.git`
+1. `git clone https://github.com/ItsIgnacioPortal/mass-reddit-downvoter.git`
 2. `cd mass-reddit-downvoter`
 3. `yarn` or `npm install`
 4. Add credentials in `client_credentials.json`    
@@ -11,7 +11,7 @@ This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It 
 	
 	First, go to https://www.reddit.com/prefs/apps and press the [Create an App] button. Fill in the text fields as follows:
 	- **Name**: `mass-downvoter`
-	- **redirect URI**: `https://github.com/PinkDev1/mass-reddit-downvoter#usage`
+	- **redirect URI**: `https://github.com/ItsIgnacioPortal/mass-reddit-downvoter#usage`
 	- **description (optional)**: `To give downvotes massively`
 	- **About URL (optional)**: `https://github.com/PinkDev1/mass-reddit-downvoter`
 
