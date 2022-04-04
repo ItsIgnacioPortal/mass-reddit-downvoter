@@ -1,5 +1,5 @@
 # Mass Reddit Downvoter    
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FPinkDev1%2Fmass-reddit-downvoter)     
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FItsIgnacioPortal%2Fmass-reddit-downvoter)     
 This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It can take mutiple targets at a time, and *may* downvote up to 250 comments in less than 3 seconds! 
 
 ## Installing
@@ -13,13 +13,13 @@ This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It 
 	- **Name**: `mass-downvoter`
 	- **redirect URI**: `https://github.com/ItsIgnacioPortal/mass-reddit-downvoter#usage`
 	- **description (optional)**: `To give downvotes massively`
-	- **About URL (optional)**: `https://github.com/PinkDev1/mass-reddit-downvoter`
+	- **About URL (optional)**: `https://github.com/ItsIgnacioPortal/mass-reddit-downvoter`
 
 	After you have created your app, it should look a bit like this:
-	![example-app-img](https://github.com/PinkDev1/mass-reddit-downvoter/blob/master/example-app.jpg?raw=true)
+	![example-app-img](https://github.com/ItsIgnacioPortal/mass-reddit-downvoter/blob/master/example-app.jpg?raw=true)
 
 	Once you've created your app, you have to **authorize** it to have access to your account. To do this, copy the URL below on a text editor and replace `myClientID` with your actual client ID (Marked with a **red arrow** on the example):     
-	`https://www.reddit.com/api/v1/authorize?client_id=myClientID&response_type=code&duration=permanent&scope=vote&state=banana&redirect_uri=https://github.com/PinkDev1/mass-reddit-downvoter#usage`
+	`https://www.reddit.com/api/v1/authorize?client_id=myClientID&response_type=code&duration=permanent&scope=vote&state=banana&redirect_uri=https://github.com/ItsIgnacioPortal/mass-reddit-downvoter#usage`
 	and slap that *authorize* button.
 	
 	Once that's done, you have all the credentials you need to start using the script!
