@@ -24,10 +24,22 @@ This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It 
 	and slap that *authorize* button.
 	
 	Once that's done, you have all the credentials you need to start using the script!
-	- **client Id**: marked with a **red arrow** on the image
-	- **client secret**: marked with a **blue arrow** on the image
-	- **username**: marked with a **green arrow** on the image
-	- **password**: password of your reddit account. Only you know it *(hopefully)*
+	- **User Agent**: You can get it from [this website](https://www.whatismybrowser.com/detect/what-is-my-user-agent/).
+	- **Client Id**: marked with a **red arrow** on the image
+	- **Client Secret**: marked with a **blue arrow** on the image
+	- **Username**: marked with a **green arrow** on the image
+	- **Password**: password of your reddit account. Only you know it *(hopefully)*
+
+	Example `client_credentials.json`:
+	```json
+{
+	"userAgent": "YOUR-USER-AGENT-HERE",
+	"clientId": "YOUR-CLIENT-ID-HERE",
+	"clientSecret": "YOUR-CLIENT-SECRET-HERE",
+	"username": "YOUR-USERNAME-HERE",
+	"password": "YOUR-PASSWORD-HERE"
+}
+	```
 	
 ## Usage
 
@@ -39,13 +51,13 @@ DEFAULT: targets are loaded from `targets.default`.
 
 `-l`/`--limit number`    
 Specifies how many comments will be downvoted.
-Remember that only comments made within the past month will be downvoted; See the future updates section below about expectations for better error handling and reporting in the future.    
+Note that only comments made within the 30 days will be downvoted
 DEFAULT: 50
 
 Example: `node downvoter.js --targets F0REM4N spez gallowboob --limit 69`
 
 ## Notes on functionality
-The current setup of PRD should avoid calls to comments older than 30 days. If all targets are downvoted successfully you'll get an stdout object letting you know the results of the PRD in an array called `messages` of objects structured as
+The current setup of mass-reddit-downvoter should avoid calls to comments older than 30 days. If all targets are downvoted successfully you'll get an stdout object letting you know the results of the PRD in an array called `messages` of objects structured as
 ```
 {
 	target: nameOfTarget,
