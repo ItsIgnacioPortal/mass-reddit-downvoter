@@ -7,10 +7,11 @@ This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It 
 2. `cd mass-reddit-downvoter`
 3. `yarn` or `npm install`
 4. Add credentials in `client_credentials.json`    
-	To get these credentials, you need to make a **script app** on reddit. For more info, check out [Reddit's Guide](https://github.com/reddit/reddit/wiki/OAuth2)
+	To get these credentials, you need to make a **script app** on reddit. The steps will be detailed below, but if you want more info you can check out [Reddit's Oauth2 Guide](https://github.com/reddit/reddit/wiki/OAuth2)
 	
 	First, go to https://www.reddit.com/prefs/apps and press the [Create an App] button. Fill in the text fields as follows:
 	- **Name**: `mass-downvoter`
+	- App type: **script**
 	- **redirect URI**: `https://github.com/ItsIgnacioPortal/mass-reddit-downvoter`
 	- **description (optional)**: `To give downvotes massively`
 	- **About URL (optional)**: `https://github.com/ItsIgnacioPortal/mass-reddit-downvoter`
