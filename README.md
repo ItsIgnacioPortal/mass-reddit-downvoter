@@ -42,7 +42,7 @@ Specifies how many comments will be downvoted.
 Remember that only comments made within the past month will be downvoted; See the future updates section below about expectations for better error handling and reporting in the future.    
 DEFAULT: 50
 
-Example: `node index.js --targets F0REM4N spez gallowboob --limit 69`
+Example: `node downvoter.js --targets F0REM4N spez gallowboob --limit 69`
 
 ## Notes on functionality
 The current setup of PRD should avoid calls to comments older than 30 days. If all targets are downvoted successfully you'll get an stdout object letting you know the results of the PRD in an array called `messages` of objects structured as
