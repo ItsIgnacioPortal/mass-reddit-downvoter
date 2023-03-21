@@ -1,5 +1,5 @@
 # Mass Reddit Downvoter    
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FItsIgnacioPortal%2Fmass-reddit-downvoter)     
+[![Visit counter](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FItsIgnacioPortal%2Fmass-reddit-downvoter%2F&count_bg=%23555555&title_bg=%2317b595&icon=&icon_color=%23E7E7E7&title=Visit+counter&edge_flat=false)](https://hits.seeyoufarm.com)     
 This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It can take mutiple targets at a time, and *may* downvote up to 250 comments in less than 3 seconds! 
 
 ## Installing
