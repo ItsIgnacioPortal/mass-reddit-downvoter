@@ -31,7 +31,7 @@ This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It 
 	- **Password**: password of your reddit account. Only you know it *(hopefully)*
 
 	Example `client_credentials.json`:
-	```json
+```json
 {
 	"userAgent": "YOUR-USER-AGENT-HERE",
 	"clientId": "YOUR-CLIENT-ID-HERE",
@@ -39,7 +39,7 @@ This is a NodeJS CLI tool that uses snoowrap to downvote comments on reddit. It 
 	"username": "YOUR-USERNAME-HERE",
 	"password": "YOUR-PASSWORD-HERE"
 }
-	```
+```
 	
 ## Usage
 
